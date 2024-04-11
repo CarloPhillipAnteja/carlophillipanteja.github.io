@@ -1,68 +1,30 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KaraokeSite</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <!-- coding by helpme_coder -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motive Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 
 <body>
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-center mb-4">Login</h5>
-            <form onsubmit="return myFunction()">
-              <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="username" class="form-control" id="username" name="username" placeholder="Username"
-                  required>
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password"
-                  required>
-              </div>
-              <div class="d-grid">
-                <input type="submit" class="btn btn-primary" value="Sign In">
-              </div>
-            </form>
-            <hr>
-            <p class="text-center mb-0">Don't have an account? <a href="#">Sign Up</a></p>
-            <p class="text-center text-end mb-0"><a href="#">Guest</a> <a href="#">Forgot Password</a></p>
-          </div>
+    <div class="container">
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">Good Morning.</br></div>
+                <div class="heart"></div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-
-  <script>
-    function myFunction() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-
-      // Dummy username and password for demonstration purposes
-      var validUsername = "1";
-      var validPassword = "1";
-
-      if (username === validUsername && password === validPassword) {
-        // Redirect to dashboard upon successful login
-        window.location.href = "Home-page.html";
-        return false; // Prevent form submission
-      } else {
-        alert("Invalid username or password!");
-        return false; // Prevent form submission
-      }
-    }
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <div class="shadow"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
