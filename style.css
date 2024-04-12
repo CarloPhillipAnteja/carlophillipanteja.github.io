@@ -50,7 +50,7 @@ main {
 }
 
 #gallery {
-    --size-w: 200px;
+    --size-w: 300px;
     --size-h: calc(var(--size-w) * 1.25);
 
     position: relative;
